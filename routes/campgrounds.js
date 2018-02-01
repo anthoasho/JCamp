@@ -25,11 +25,11 @@ router.post("/", middleware.isLoggedIn, function(req, res){
             id: req.user._id,
             username: req.user.username
             },
-            newCamp = {name: name, image: image, description: description, author: author};
+            newCamp = {name: name, image: image, description: description, price: price, author: author};
         Campground.create(newCamp, function(err, newlyCreated){
             if(err){
                 req.flash("error", "Woopsie! Something went wrong!");
-                res.redirect("/campgrounds")  
+                res.redirect("/campgrounds");  
             }else{
                 req.flash("success", "Successfully posted!");
                 res.redirect("campgrounds");
