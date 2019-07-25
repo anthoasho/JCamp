@@ -14,21 +14,21 @@
 </div>
 <div class="row" style="display:flex; flex-wrap: wrap;">
             <% campgrounds.forEach(function(campground){ %>
-               
-               <div class="col-sm-6 col-md-3" >  
-                   <div class="img-thumbnail"> 
+
+               <div class="col-sm-6 col-md-3" >
+                   <div class="img-thumbnail">
                         <img style="width: 250px;" src="<%= campground.image %>">
                          <h4> <%= campground.name %>  </h4>
                    </div>
-   
+
                 </div>
                    <% }) %>
 </div>
 
 
-            
-         
+
+
             </div>
-            
+
 
 <% include partials/footer %>
