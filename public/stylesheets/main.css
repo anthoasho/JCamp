@@ -1,3 +1,109 @@
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Playfair+Display';
+
+
+body {
+
+  --highlight-color: #20b481;
+  --secondary-color: #2054b4;
+}
+a{
+  color: var(--secondary-color);
+}
+.nav-links a{
+  color: var(--highlight-color) !important;
+}
+.nav-link{
+
+}
+
+.navbar{
+  border-bottom: 1px solid var(--highlight-color);
+  background: #1e1f21;
+  box-shadow: 2px 3px 4px #00000050;
+
+}
+.navbar-brand{
+  letter-spacing: 3px;
+  font-family: 'Fjalla One';
+
+}
+.navbar-nav{
+  height: 100%;
+}
+.nav-link a{
+  color: white!important;
+}
+.btn{
+  background: var(--highlight-color);
+  border: none;
+  margin: 4px;
+  font-family: 'Fjalla One';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.homepage-thumb{
+  margin: 10px;
+  box-shadow: 2px 3px 4px #00000020;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+}
+.homepage-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading-large{
+  font-family: 'Fjalla One';
+  margin: 10px 0 10px 0;
+  letter-spacing: 1px;
+  background: #20b481;
+  padding: 10px 0 10px 10px;
+  width: auto;
+  color: white;
+  box-shadow: 1px 2px 4px #00000030;
+  border-radius: 3px;
+
+}
+.homepage-list::after{
+  content: "";
+  height: 80%;
+  width: 0.5px;
+  position: absolute;
+  background: var(--highlight-color);
+  opacity: 0.2;
+  right: 0;
+}
+.homepage-list > p{
+  margin: 5px 0 5px;
+}
+.card{
+  border-radius: 0px;
+}
+.jumbotron{
+margin: 10px 0 10px 0;
+background: #8e8e8e;
+background: #2022b400;
+color: black;
+box-shadow: 0px 0px 6px #20b48133;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.jumbotron h1 {
+  font-family: 'Fjalla One';
+  letter-spacing: 5px;
+  color: #1e1f21bf;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 1) 0px -1px 1px;
+
+}
 .img-thumbnail img{
     width: 100%;
 

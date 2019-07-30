@@ -1,16 +1,36 @@
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Playfair+Display';
+
 body{
     background-color: #000;
+    font-family: 'Fjalla One';
+
 }
 #landing-header{
     z-index: 10;
     position: relative;
     text-align: center;
-    padding-top: 40vh;
+    /* padding-top: 40vh; */
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
 }
 
 #landing-header h1{
-    color: #FFF;
+
+  color: #20b481;
+	font-weight: 900;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	font-size: 150px;
+  text-shadow: 5px 3px black;
 }
+
+
+
 .slideshow {
     position: fixed;
     width: 100%;
@@ -21,6 +41,9 @@ body{
     list-style: none;
     margin: 0;
     padding: 0;
+filter: blur(1rem) opacity(50%);
+
+
 }
 .slideshow li {
     width: 100%;
@@ -54,6 +77,23 @@ body{
     background-image: url("../images/IMG_8590.JPG");
     animation-delay: 40s;
 }
+
+.landing-button{
+  background: #00000050;
+  font-size: 2.5rem;
+  border-radius: 2px;
+  margin: 20px;
+  color: white;
+  border: 1px solid white;
+}
+
+.landing-button:hover{
+  border: 1px solid #20b481;
+  color: #FFF;
+  transform: translateY(2px);
+
+}
+
 
 @keyframes imageAnimation{
     0%{

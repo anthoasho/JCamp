@@ -1,3 +1,5 @@
+var dotenv = require('dotenv');
+dotenv.load();
 var campgroundRoutes    =   require("./routes/campgrounds"),
     commentRoutes       =   require("./routes/comments"),
     LocalStrategy       =   require("passport-local"),
@@ -7,10 +9,10 @@ var campgroundRoutes    =   require("./routes/campgrounds"),
     passport            =   require("passport"),
     mongoose            =   require("mongoose"),
     express             =   require("express"),
-    methodOverride      =   require("method-override"), 
+    methodOverride      =   require("method-override"),
     flash               =   require("connect-flash"),
     app                 =   express();
-
+console.log(process.env.DATABASEURL)
 mongoose.connect(process.env.DATABASEURL);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -21,7 +23,7 @@ app.use(flash());
 
 app.use(require("express-session")({
     secret: "A fox bites the tail of its enemies",
-    resave: false, 
+    resave: false,
     saveUninitialized: false
 }));
 
